@@ -1,0 +1,31 @@
+.container{
+    margin: 10px auto;
+    position: relative;
+}
+.pro{
+    float: left;
+    margin: 10px;
+    vertical-align: middle;
+}
+.pro:hover{
+    transition-timing-function: linear;
+    opacity: 1;
+
+}
+.text{
+    padding: 5px 10px;
+    position: absolute;
+    visibility: hidden;
+    color: #eee;
+    text-align: center;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.container:hover .text{
+    visibility: visible;
+}
+h2{
+    text-align: center;
+    font-size: 1.7em;
+}

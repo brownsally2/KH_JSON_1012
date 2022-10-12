@@ -1,0 +1,16 @@
+*{
+    margin : 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    /* center : 주축 방향의 중앙에 정렬 */
+    /* space-between : 플렉스 아이템 사이의 간격이 균일하도록 정렬 */
+}
+div{
+    width: 160px;
+    height: 240px;
+    margin: 5px;
+}

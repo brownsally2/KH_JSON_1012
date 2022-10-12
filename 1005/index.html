@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그 선택하기</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form name="frm">
+        <input type="file" name = "upload">
+    </form>
+    <script>
+        const fileEl = document.frm.upload.files;
+        console.log("Test : " +fileEl);
+  
+    </script>
+</body>
+</html>

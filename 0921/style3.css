@@ -1,0 +1,38 @@
+/* rem : html 태그의 텍스트 크기에 상대적인 크기를 가짐 */
+section{
+    width: 800px;
+    margin: 0 auto;
+}
+/* 반응형 ui를 만들 때 em단위로 하면 부모만 바꾸면 변경됨 */
+h2{
+    font-size: 1.5em;
+    /*부모의 (정의가 되어있지 않다면 body태그(16px))1.5배가 됨*/
+}
+h3{
+    font-size: 1.0em;
+}
+p{
+    padding-top : 20px;
+    font-size: 12px;
+}
+article{
+    float: left;
+    width :350px;
+    height: 200px;
+    margin: 10px;
+    padding : 10px;
+    border: 1px solid darkgray;
+}
+footer{
+    clear: left;
+    width: 96%; /* 부모(section)의 100%*/
+    height: 50px;
+    background-color: #222;
+    margin-left : 10px;
+}
+/* footer의 자식 요소 p */
+footer > p{
+    color: #eee;
+    font-size: 0.9em;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+*{
+    width: 500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+div{
+    font-size: 1.6em;
+}
+.flex-container{
+    width: 100vw;
+    height: calc(100vh - 160px);
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* align-item : 교차축(세로축) 기준으로 정렬 */
+/* stretch : 플렉스 아이템의 너비나 높이가 늘어남  */
+/* justify-content : 주축(가로축, flex-direction: row;) 기준으로 정렬 */
+/* flex-start, flex-end */
+/*                    space-between -> 아이템 사이의 일정한 간격을 줌 */
+/*                    space-around -> 아이템 둘레에 일정한 간격  */
+/*                    space-evenly ->  플렉스 아이템 사이와 양끝의 간격이 균일하도록 정렬*/
+/* flex-wrap : wrap은 크기 이상의 것은 다음줄로 내림 */
+/*         nowrap은 크기에 맞춰서 작아지고 넣어짐 넣다보면 영역에서 튀어나오게 됨 */
+/* flex-direction 은 플렉스에서 row가 기본 값 */
+/* row-reverse도 있음 */
+/* flex-shrink (자식 특성) : 정한 크기 그대로 들어감  */
+/* flex-item에 높이를 주지 않으면 맞춰서 채움  */
+.flex-item{
+    width: 100px;
+    margin: 2px;
+    flex-shrink: 0;
+    border: 1px solid gray;
+    color: white;
+    background-color: orange;
+    border : 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item:nth-child(1){
+    background-color: orangered;
+    flex-grow:4;
+}
+.flex-item:nth-child(2){
+    flex-grow: 6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    height: 80px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    height: 80px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+} 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배경색 바꾸기</title>
+    <style>
+           #green{
+            border: none;
+            background-color: green;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+        #orange{
+            border: none;
+            background-color: orange;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+        #purple{
+            border: none;
+            background-color: purple;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+        #box{
+            width: 600px;
+            height: 300px;
+            border: 1px solid #ccc;
+            background-color: lightblue;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        #green:hover{
+            background-color: yellowgreen;
+        }
+        #orange:hover{
+            background-color: lightcoral;
+        }
+        #purple:hover{
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <button id = "green">Green</button>
+    <button id = "orange">Orange</button>
+    <button id = "purple">purple</button>
+    <div id ="box"></div>
+
+    <script>
+        // 스타일 조작 : <노드>.style.<css속성명> = <속성값>;
+        const btnEl = document.querySelector("#green");
+        btnEl.addEventListener("click", function(){
+            box.style.background = "green";
+        });
+
+        const btnEl2 = document.querySelector("#orange");
+        btnEl2.addEventListener("click", function(){
+            box.style.background = "orange";
+        });
+
+        const btnEl3= document.querySelector("#purple");
+        btnEl3.addEventListener("click", function(){
+            box.style.background = "purple";
+        });
+    </script>
+</body>
+</html>

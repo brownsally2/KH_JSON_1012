@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항작성</title>
+    <style>
+        textarea{
+            vertical-align: middle;
+        }
+        button{
+            margin-left: 130px;
+        }
+        label{
+            font-weight: bold;
+        }
+        .dis{
+            vertical-align: middle;
+            
+        }
+        #line{
+            width:150px;
+            float: left;
+            text-align: left;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <form action="insert.no" method="post">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <p>
+                <label for="title" class="dis">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력하시오.">
+            </p>
+            <p >
+                <label for="content" class="dis">내용</label>
+                <textarea name="content" id="contents" cols="30" rows="10" placeholder="내용을 입력하시오."></textarea>
+            </p>
+            <p>
+                <label for="uploadFile" class="dis">첨부파일</label>
+                <input type="file">
+            </p>
+            <button>작성하기</button>
+           
+        </fieldset>
+    </form>
+
+   
+</body>
+</html>

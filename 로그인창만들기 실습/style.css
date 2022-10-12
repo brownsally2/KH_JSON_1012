@@ -1,0 +1,74 @@
+#container{
+    text-align: center;
+
+}
+#container::before{
+    content: "";
+    background-image: url(../홈페이지/image/5504286.png);
+    background-size: cover;
+    opacity: 0.6;  
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    right: 0px;
+    bottom : 0px;
+    /* background-color: #000; */
+}
+h3{
+    position: relative;
+}
+#line{
+    margin-bottom: 20px;
+}
+
+
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+    border-color: #ccc;
+    position: relative;
+}
+#idInput, #emailInput{
+    margin-left: 13px ;
+}
+button{
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: #ccc;
+    position: relative;
+}
+button:hover{
+    opacity: 0.8;
+}
+label{
+    position: relative;
+}
+
+#join{
+    margin-left: 60px;
+    width: 370px;
+    height: 40px;
+    border-color: #ccc;
+    margin-top: 10px;
+}
+p{
+    /* margin: 0 auto; */
+    font-size: 13px;
+    color:blueviolet;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 80px;
+    /* text-align: right; */
+}
+::placeholder{
+    font-weight: bold;
+    text-align: center;
+}
+.hide{
+    display: none;
+    /* text-align: right; */
+}

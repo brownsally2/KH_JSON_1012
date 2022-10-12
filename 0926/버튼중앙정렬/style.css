@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* contain : 배경요소 안에 들어가도록 크기를 확대하거나 축소 (화면에 크기에 중점) */
+    /* cover : 비율이 안 맞으면 늘려서 채움 */
+    /* background-position: left top; */
+    background-attachment: fixed;
+    /* fixed : 마우스 휠 위치에 상관없이 고정 */
+    display: flex;
+    /* flex : 가로축 정렬?*/
+    justify-content: center;
+    /* 가로축의 정중앙으로 정렬 */
+    align-items: center;
+    /* 세로축의 정중앙으로 정렬 */
+    min-height: 100vh;
+    /* height = 1000px 이면 1vh = 10px임 */
+    /* vh : 열려있는 화면 전체의 상대 길이(스크롤바를 포함한 길이를 반환) */
+    /* %를 쓰고 있는 요소의 부모 요소의 길이에 맞게 반환 */
+    /* 화면에 보이는 세로축의 정중앙? */
+    /* vh : 뷰포트의 높이값 */
+}
+button{
+    background-color: #ccc;
+    font-size : 1.2em;
+    padding : 1em 2em;
+    /* padding : 위아래, 좌우 */
+    /* 1em : 부모 요소의 1배를 함 (기본 1em = 16px) */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #fff;
+    /* 가로길이 번짐길이 농도 색상 */
+}
+/* button:active : 요소를 마우스로 클릭하고 있는 동안 해당 태그가 선택자로 지정 */
+button:active{
+    position: relative;
+    background-color: #999;
+    /* realtive : 원래 위치에서 이동하기 위해 넣어주어야 함, 좌표 속성을 사용할 수 있음 */
+    left:2px;
+    top:2px;
+}

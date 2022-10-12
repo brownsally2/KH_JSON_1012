@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+h3{
+    font-size: 44px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.text{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#container{
+    margin: 100px;
+}
+#box{
+    font-family: 'Nanum Pen Script', cursive;
+    width: 350px;
+    height: 350px;
+    background-color: #ffff99;
+    padding: 18px;
+    transform:rotate(10deg);
+    position:relative;
+    /* 자르기 위한 위치를 찾기 위해  */
+    margin: 100px;
+    text-align: center;
+}
+#box .post-deco{
+    position: absolute;
+    top: 340px;
+    left: 210px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-40deg);
+    z-index: 10;
+    background-color: white;
+}

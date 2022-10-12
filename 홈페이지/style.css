@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+*{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 130px 8fr 130px;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "memberinfo board1 board2"
+        "footer footer footer"
+    ;
+    padding: 0 10%;
+    position: relative;
+
+}
+.container::before{
+    content: "";
+    background-image: url(image/5504286.png);
+    background-size: cover;
+    opacity: 0.6;  
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    right: 0px;
+    bottom : 0px;
+    /* background-color: #000; */
+}
+
+#header{
+    
+    grid-area: header;
+    background-color: #f2de79;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    display: flex;
+    width: 100vh;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logo a{  
+    margin: auto 0px;
+    font-size: 20px;
+}
+
+.logo #search{
+    justify-content: space-between;
+    /* display: inline-block;
+    float: right; */
+    /* position: fixed;
+    top: 1em;
+    right: 1em; */
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+
+#memberinfo{
+    position: relative;
+    grid-area: memberinfo;
+    width: 200px;
+    height: 200px;
+    /* background-color: #F2d43d; */
+    border: 1px solid darkgray;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+#memberid{
+    margin-top: 20px;
+}
+#nickname{
+    font-weight: bold;
+    color : black;
+    font-size: 20px;
+}
+#logout{
+    margin-top: 10px;
+}
+
+
+#board1{
+    position: relative;
+    grid-area: board1;
+    /* background-color: #F2b6d2 ; */
+    display: flex;
+    flex-wrap: wrap;
+}
+#line{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 10px, 10px; */
+    justify-content: center;
+    align-items: center;
+
+    /* float:left; */
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ; 
+    grid-gap: 8px; */
+}
+#line > div{
+     /* padding: 8px; */
+     margin: 35px;
+}
+#board2{
+    position: relative;
+    grid-area: board2;
+    /* background-color: #f2d379; */
+}
+
+
+#footer{
+    grid-area: footer;
+    /* background-color: #F28585 ; */
+
+}
+
+.board-list{
+    width: 300px;
+    height : 300px;
+    /* margin: 20px; */
+    text-align: center;
+    border: 1px solid darkgray;
+    justify-content: center;
+    grid-area: content;
+    border-radius: 7px;
+    
+}
+/* .board-list:nth-child(1){
+    background-color: antiquewhite;
+} */
+
+.board-list2{
+    width: 300px;
+    height : 300px;
+    /* margin-top: 120px;
+    margin-left: 30px; */
+    margin: 30px;
+    text-align: center;
+    border: 1px solid darkgray;
+    justify-content: center;
+    grid-area: content;
+    border-radius: 7px;
+}
+.board-list2:nth-child(1){
+    margin-top : 16px;
+}
+
+#tableline1{
+    border-bottom: 1px solid darkgray;
+    padding: 13px;
+    color: white;
+    background-color: bisque;
+    border-radius: 7px;
+    
+}
+#tableline{
+    border-bottom: 1px solid darkgray;
+    padding: 16px;
+}
+
+#tableline:nth-last-child(1){
+    border-bottom : none;
+}
+/* #line2{
+    margin-top: 20px;
+} */
+
+#bname{
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+#footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #F28585;
+
+}
+#fbottom{
+    margin: 2%;
+}
+
+
+/* .board{
+    width: 400px;
+    height: 1000px;
+    background-color: bisque;
+
+} */

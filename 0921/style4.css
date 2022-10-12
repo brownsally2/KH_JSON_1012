@@ -1,0 +1,23 @@
+
+ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+}
+/* block : 항상 가로 한줄을 다 차지하는 것  */
+/* inline : span, a 태그 등을 사용 했을 때 요소의 너비를 컨텐츠 크기
+        만큼 차지하는 성격 */
+a{
+    display: block;
+    padding : 10px 20px;
+    background-color: #ccc;
+}
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #000;
+    color:#fff;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼을 누르면?</title>
+    <style>
+        #green{
+            border: none;
+            background-color: green;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+        #orange{
+            border: none;
+            background-color: orange;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+        #purple{
+            border: none;
+            background-color: purple;
+            color : white;
+            width: 200px;
+            height: 50px;
+        }
+
+        #green:hover{
+            background-color: yellowgreen;
+        }
+        #orange:hover{
+            background-color: lightcoral;
+        }
+        #purple:hover{
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="green">Green</button>
+    <button id="orange">Orange</button>
+    <button id="purple">Purple</button>
+
+    <script>
+        const btnEl = document.querySelector("#green");
+        btnEl.onclick =() => alert("green click!!!");
+
+        const btnEl2= document.querySelector("#orange");
+        btnEl2.onclick = () => alert("orange click!!");
+
+        const btnEl3 = document.querySelector("#purple");
+        btnEl3.onclick = () => alert("purple click!!");
+
+    </script>
+</body>
+</html>

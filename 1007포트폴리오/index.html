@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <fieldset>
+    <div id="container">
+        
+        <div id="line">
+            <label for="idInput"> 아이디
+                <input type="text" id="idInput" autofocus> 
+            </label>
+        </div>
+        <p class="idfailure-message hide">필수 입력 항목 입니다.</p>
+      
+        
+        <div id="line">
+            <label for="pwInput"> 패스워드
+                <input type="password" id="pwInput" onclick="pw_click()"> 
+            </label>
+        </div>
+        <p class="pwfailure-message hide">필수 입력 항목 입니다.</p>
+        <p class="pwClick-message hide">영문자 대/소문자, 숫자 포함 8~32자</p>
+
+        <div id="line">
+            <label for="pwInput"> 패스워드 확인
+                <input type="password" id="pwrightInput" onclick="pw_clickright()"> 
+            </label>
+        </div>
+        <p class="pwrightfailure-message hide">필수 입력 항목 입니다.</p>
+
+
+        <div id="line">
+            <label for="emailInput">이메일</label>
+            <input type="email" onclick="email_click()">@<input type="email"></input>
+        </div>
+        
+
+        <div id="line">
+            <label for="emailInput">주소</label>
+            <input type="text" id="aderInput"> 
+            <div><input type="text" id="address"></div> 
+        </div>
+        <br>
+        <button id="join">가 입</button>
+    </div>
+</fieldset>
+</form>
+    <script src="./join.js"></script>
+</body>
+</html>

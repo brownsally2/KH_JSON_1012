@@ -1,0 +1,29 @@
+table, td, th{
+    border : 1px solid darkgrey;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+/* 테두리와 내용 사이의 간격은 padding속성으로 정함 */
+td, th{
+    padding: 10px;
+}
+h1{
+    color: brown;
+    font-size: 36px;
+    text-shadow: 1px 1px 3px orange;
+}
+h2{
+    color: blue;
+    font-size: 24px;
+}
+li{
+    color: green;
+}
+p{
+    font-size: 15px;
+}
+#container{
+    width: 600px;
+    margin : 0 auto; /* 중앙 정렬 */
+}

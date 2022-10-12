@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            width: 5000px;
+            height : 5000px;
+        }
+        /* button{
+            position: fixed;
+            left: 10px;
+            top: 10px;
+
+        } */
+    </style>
+</head>
+<body>
+    <button onclick="sTo()">scrollTo(100, 200)</button>
+    <button onclick="sBy()">scrollBy(100, 200)</button>
+    <script>
+        // scrollTo() : 웹 브라우저의 스크롤을 특정 위치만큼 이동
+        function sTo() {
+            // window.scrollTo(100,200);
+            window.scrollTo({left: 100, top: 0});
+        }
+        // scrollBy() : 웹 브라우저의 스크롤을 현재위치에서 상대적 위치로 이동
+        function sBy(){
+            // window.scrollBy(100, 200);
+            window.scrollBy({left: 100, top : 0});
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #container{
+            text-align: center;
+        }
+        #line{
+            margin-bottom: 18px;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border-color: #ccc;
+        }
+        button{
+            width: 60px;
+            height: 35px;
+            border-radius: 5px;
+            border-color: #ccc;
+        }
+
+        #join{
+            width: 270px;
+            height: 40px;
+            border-color: #ccc;
+            margin-top: 10px;
+        }
+        p{
+            margin: 0 auto;
+            font-size: 12px;
+            color:red;
+        }
+        ::placeholder{
+            font-weight: bold;
+            text-align: center;
+        }
+        .hide{
+            display: none;
+            /* text-align: right; */
+        }
+
+        
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="#">
+            
+            <h3>회원가입</h3>
+            
+            <div id="line">
+                <input type="text" id="id" placeholder="아이디 입력" autofocus> <button onclick="id_check(); return false">확인</button>
+            </div>
+            <div class="idfailure-message hide">아이디가 올바르지 않습니다.</div>
+            <div class="idsuccess-message hide">아이디를 사용할 수 있습니다.</div>
+            <!-- <p id="id-reg"></p> -->
+            
+            <div id="line"><input type="password" id="password" placeholder="패스워드 입력"> <button>확인</button></div>
+            <div class="pwfailure-message hide">비밀번호가 올바르지 않습니다.</div>
+            <div class="pwsuccess-message hide">비밀번호가 사용할 수 있습니다.</div>
+
+            <div id="line"><input type="email" id="email" placeholder="이메일 입력"> <button>확인</button></div>
+            <div class="misemail-message hide">이메일을 입력해주세요.</div>
+
+            <div id="line"><input type="tel" id="phonenumber" placeholder="전화번호 입력 (- 하이픈) 제외"> <button onclick="phoneche()">확인</button></div>
+            <div class="misnumber-message hide">잘못 입력하셨습니다.</div>
+            <div class="numbersuccess-message hide">올바른 숫자입니다.</div>
+            <button id="join">가입요청</button>
+        </div>
+        </form>
+        <!-- </fieldset> -->
+    <script>
+        let elInput = document.querySelector("#idInput");
+        let elNumbertype = document.querySelector("#phonenumber");
+
+
+        let elFailuremessage = document.querySelector('.failure-message');
+        let elSuccessmessage = document.querySelector('.success-message');
+        let elrightmessage = document.querySelector('.numbersuccess-message');
+        let elMismatchmessage = document.querySelector('.mismatch-message');
+        let elMisnumbermessage = document.querySelector('.misnumber-message');
+
+        var idRegExp = /^[a-zA-z0-9]{8,20}$/
+        function id_check(){
+            // let id = document.getElementById("id").value;
+            if(!idRegExp.test(id.value)) {
+                elSuccessmessage.classList.add('hide');
+                elFailuremessage.classList.remove('hide');
+
+                // let str = "잘못된 아이디입니다."
+                // document.getElementById("id-reg").innerHTML = str;
+                return false;
+            } else {
+                // let str = "사용가능한 아이디입니다."
+                // document.getElementById("id-reg").innerHTML = str;
+                elSuccessmessage.classList.remove('hide');
+    
+                elFailuremessage.classList.add('hide');
+
+
+
+            }
+        }
+
+        // let phonenumber = /^[0-9]*$/;
+        let phonenumber = /\d{3}-\d{4}-\d{4}/;
+        function phoneche() {
+                if (!phonenumber.test(elNumbertype.value)) {
+                // alert("잘 못 입력 하셨습니다.");
+                elrightmessage.classList.add('hide');
+                elMisnumbermessage.classList.remove('hide');
+                
+                return false;
+                }
+                else {
+                elrightmessage.classList.remove('hide');
+                elMisnumbermessage.classList.add('hide');
+                
+                // alert("올바르게 입력하셨습니다.");
+                }
+        }
+
+
+
+    </script>
+</body>
+</html>
